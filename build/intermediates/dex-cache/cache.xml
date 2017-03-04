@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_8b121d17acd22afb59d90bc36ab08622c51b3f2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.8.0_42213ee22fdd1406da1bbe15b8dee0d24666a6d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_c9441fb5454b9a4859ed76a92b0c112935f1b895.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_122a3f7673e9162a3003d580da112a912ce5dba8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_492f37367633f08218a09c30b5949a19039787a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_d067b29ee7af8af2105d74c1dce22317987622d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-9.8.0_ec57bdca6d3d7c91b162a65ab77064e759f4a5e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_911bc66775b8e43f93a7b728cc2c6694a106d604.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45b426f7796b741035581a176744d91090e2e6fb">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.8.0_55f04aa5dd2d1dedf532f138092cb958eeedb7d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_b0733c91b98495817b2d0ff1702c714de59a83a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_9a711eaad15ef73d2f5d1b9df5ad7d97ed494fd3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_16b2086e387703e5195e3a68602d5fadbb35521d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_d5d54f0139593e20e0134710db9f02ccc13ad8de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.1/c04eb2cc599cd1742889bfa7cc41878db0d152f5/jackson-databind-2.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c04eb2cc599cd1742889bfa7cc41878db0d152f5">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/jackson-databind-2.8.1_e2cddba9c5d5648e520bcccfb1ae77cf0de7afa9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_ab3da97f7d6b0805ccebf15b6cdd9e7b937b2eaf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_84c86a8af0d2c0d07e2d04912d9e828d5089eb02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-9.8.0_f4e27099a5d46aeeaf96e4ff57f8c67c8ec3869a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.volley-volley-1.0.0_188190ca6e5c5804613d0788fbed98adfdab16d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.8.0_35184dc60f590f139906d120854ee7e25601c22e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_fbecb02909a659b39fa77d28392bf05044322913.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.5/442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375/universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.5_bef71ea854f84474f7018ce3a0bc6ceaf874bdc9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.8.0_7ac102753a22907bae4c9bfc9d80e6f5b2703da7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.1_48e318880aed1ec4288240db40e3680256693f23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_806710d2336143b692881ebf3e77a65344c1712a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.1/fd13b1c033741d48291315c6370f7d475a42dccf/jackson-core-2.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fd13b1c033741d48291315c6370f7d475a42dccf">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/jackson-core-2.8.1_4a5035fa07d7b2ef6a7b2c294b4dd4220e684631.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_0f34388681733681d0d7c7f9b94641d4721f0667.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/swapna/workspace/chatapp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/swapna/workspace/chatapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_b830e4ec9ca2922eac788afde92b6d7f8f8e29cd.jar" />
+    </item>
+
+</items>

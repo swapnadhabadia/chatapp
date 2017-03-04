@@ -15,3 +15,7 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-dontwarn com.android.volley.toolbox.**
+-dontwarn okhttp3.**
+-dontwarn javax.annotation.**
+-dontwarn okio.**
