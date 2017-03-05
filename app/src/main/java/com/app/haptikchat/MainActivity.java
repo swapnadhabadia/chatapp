@@ -1,22 +1,14 @@
 package com.app.haptikchat;
 
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 
-import com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer;
+import com.app.haptikchat.adapeter.SampleFragmentPagerAdapter;
+import com.app.haptikchat.chatmain.ChatHistoryFragment;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends FragmentActivity implements ChatHistoryFragment.OnFragmentInteractionListener{
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
@@ -40,7 +32,9 @@ public class MainActivity extends AppCompatActivity  {
         tabLayout.setupWithViewPager(viewPager);
     }
 
+    @Override
+    public void onHomeItemClick(String name, int position, boolean b) {
 
-
+    }
 }
 
