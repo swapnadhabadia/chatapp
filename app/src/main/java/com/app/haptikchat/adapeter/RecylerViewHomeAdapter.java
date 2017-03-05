@@ -228,7 +228,7 @@ public class RecylerViewHomeAdapter extends RecyclerView.Adapter<RecyclerView.Vi
             addToFavouriteImg = (AppCompatImageView) itemView.findViewById(R.id.addToFavouriteImg);
             mTxtUserName = (AppCompatTextView) itemView.findViewById(R.id.mTxtUserName);
             mTxtUserChatMsg = (AppCompatTextView) itemView.findViewById(R.id.mTxtUserChatMsg);
-            userTimeStamp = (AppCompatTextView) itemView.findViewById(R.id.userTimeStamp);
+            userTimeStamp = (AppCompatTextView) itemView.findViewById(R.id.name);
         }
     }
 

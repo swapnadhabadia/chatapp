@@ -42,9 +42,9 @@ public class RecylerViewTotalMessagesAdapter extends RecyclerView.Adapter<Recycl
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         RecylerViewTotalMessagesAdapter.ViewHolderTotal viewHolderTotal = (RecylerViewTotalMessagesAdapter.ViewHolderTotal) holder;
-        viewHolderTotal.time2.setText(notificationModelArrayList.get(position).getUserName());
-        viewHolderTotal.time4.setText(String.valueOf(notificationModelArrayList.get(position).getTotalMessages()));
-        imageLoader.displayImage(notificationModelArrayList.get(position).getImages(), viewHolderTotal.imageView);
+        viewHolderTotal.txtName.setText(notificationModelArrayList.get(position).getUserName());
+        viewHolderTotal.totalMessagetxt.setText(String.valueOf(notificationModelArrayList.get(position).getTotalMessages()));
+        imageLoader.displayImage(notificationModelArrayList.get(position).getImages(), viewHolderTotal.displayProfile);
         //viewHolderTotal.imageView.setImageResource();
     }
 
@@ -55,17 +55,17 @@ public class RecylerViewTotalMessagesAdapter extends RecyclerView.Adapter<Recycl
 
 
     public class ViewHolderTotal extends RecyclerView.ViewHolder {
-         private AppCompatImageView imageView;
-        private AppCompatTextView time2;
-        private AppCompatTextView time4;
+         private AppCompatImageView displayProfile;
+        private AppCompatTextView txtName;
+        private AppCompatTextView totalMessagetxt;
         private AppCompatTextView time6;
 
         public ViewHolderTotal(View itemView) {
             super(itemView);
-            imageView = (AppCompatImageView) itemView.findViewById(R.id.imageView);
-            time2 = (AppCompatTextView) itemView.findViewById(R.id.time2);
-            time4 = (AppCompatTextView) itemView.findViewById(R.id.time4);
-            time6 = (AppCompatTextView) itemView.findViewById(R.id.time6);
+            displayProfile = (AppCompatImageView) itemView.findViewById(R.id.displayProfile);
+            txtName = (AppCompatTextView) itemView.findViewById(R.id.txtName);
+            totalMessagetxt = (AppCompatTextView) itemView.findViewById(R.id.totalMessagetxt);
+            time6 = (AppCompatTextView) itemView.findViewById(R.id.favTxt);
 
            // time = (AppCompatTextView) itemView.findViewById(R.id.time1);
 
