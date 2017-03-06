@@ -12,7 +12,7 @@ import com.app.haptikchat.chatdetail.summary.SummaryFragment;
  */
 public class ChatFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[] { "Tab1", "Tab2" };
+    private String tabTitles[] = new String[] { "Chat History", "Chat Detail" };
      Context context;
 
     public ChatFragmentPagerAdapter(FragmentManager fm, Context context) {
