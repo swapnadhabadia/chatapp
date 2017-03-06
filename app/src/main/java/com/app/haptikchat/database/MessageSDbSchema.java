@@ -13,7 +13,9 @@ public class MessageSDbSchema {
             protected static final String MESSAGES = "messages";
             protected static final String IMAGE = "image";
             protected static final String NAME = "name";
-
+            protected static final String MYFAV = "fav";
+            protected static final String DATE = "date";
+            protected static final String ME = "me";
         }
     }
 }

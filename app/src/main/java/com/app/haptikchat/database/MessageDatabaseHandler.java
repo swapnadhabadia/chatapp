@@ -6,8 +6,10 @@ import android.database.Cursor;
 import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
-import com.app.haptikchat.chatSummeryDbDetails;
+import com.app.haptikchat.model.ChatSummeryDbDetails;
+import com.app.haptikchat.model.FavTotalModel;
 import com.app.haptikchat.model.MessagesDisplayModel;
 
 import java.util.ArrayList;
@@ -27,7 +29,11 @@ public class MessageDatabaseHandler extends SQLiteOpenHelper {
             + MessageSDbSchema.ListofTable.Columns.USER_NAME + " TEXT,"
             + MessageSDbSchema.ListofTable.Columns.MESSAGES + " TEXT,"
             + MessageSDbSchema.ListofTable.Columns.IMAGE + " TEXT,"
+            + MessageSDbSchema.ListofTable.Columns.MYFAV + " INTEGER,"
+            + MessageSDbSchema.ListofTable.Columns.DATE + " STRING,"
+            + MessageSDbSchema.ListofTable.Columns.ME + " TEXT,"
             + MessageSDbSchema.ListofTable.Columns.NAME + " TEXT)";
+    private String TAG="MessageDatabaseHandler";
 
 
     public MessageDatabaseHandler(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
@@ -57,6 +63,9 @@ public class MessageDatabaseHandler extends SQLiteOpenHelper {
         contentValues.put(MessageSDbSchema.ListofTable.Columns.MESSAGES, messagesDisplayModel.getMessages());
         contentValues.put(MessageSDbSchema.ListofTable.Columns.NAME, messagesDisplayModel.getName());
         contentValues.put(MessageSDbSchema.ListofTable.Columns.IMAGE, messagesDisplayModel.getImage());
+        contentValues.put(MessageSDbSchema.ListofTable.Columns.MYFAV, messagesDisplayModel.getMyFav());
+        contentValues.put(MessageSDbSchema.ListofTable.Columns.DATE, messagesDisplayModel.getTimeStamp());
+        contentValues.put(MessageSDbSchema.ListofTable.Columns.ME, messagesDisplayModel.getMe());
         database.insert(MessageSDbSchema.ListofTable.NAME, null, contentValues);
         database.close();
     }
@@ -66,7 +75,7 @@ public class MessageDatabaseHandler extends SQLiteOpenHelper {
         database=this.getReadableDatabase();
         Cursor cursor=database.query(MessageSDbSchema.ListofTable.NAME,null,null,null,null,null,null);
 
-        ArrayList<MessagesDisplayModel> notificationModelArrayList=new ArrayList<MessagesDisplayModel>();
+        ArrayList<MessagesDisplayModel> notificationModelArrayList=new ArrayList<>();
 
         MessagesDisplayModel messagesDisplayModel;
         for (int i = 0; i < cursor.getCount(); i++) {
@@ -77,12 +86,14 @@ public class MessageDatabaseHandler extends SQLiteOpenHelper {
             messagesDisplayModel.setUserName(cursor.getString(1));
             messagesDisplayModel.setMessages(cursor.getString(2));
             messagesDisplayModel.setImage(cursor.getString(3));
-            messagesDisplayModel.setName(cursor.getString(4));
-
+            messagesDisplayModel.setMyFav(cursor.getInt(4));
+            messagesDisplayModel.setTimeStamp(cursor.getString(5));
+            messagesDisplayModel.setMe(cursor.getInt(6));
+            messagesDisplayModel.setName(cursor.getString(7));
             notificationModelArrayList.add(messagesDisplayModel);
         }
         cursor.close();
-        database.close();
+       // database.close();
         // NotificationStore.setAllNotificationData(notificationModelArrayList);
 
         return notificationModelArrayList;
@@ -99,55 +110,76 @@ public class MessageDatabaseHandler extends SQLiteOpenHelper {
         contentValues.put(MessageSDbSchema.ListofTable.Columns.MESSAGES, messagesDisplayModel.getMessages());
         contentValues.put(MessageSDbSchema.ListofTable.Columns.NAME, messagesDisplayModel.getName());
         contentValues.put(MessageSDbSchema.ListofTable.Columns.IMAGE, messagesDisplayModel.getImage());
+        contentValues.put(MessageSDbSchema.ListofTable.Columns.MYFAV, messagesDisplayModel.getMyFav());
+        contentValues.put(MessageSDbSchema.ListofTable.Columns.DATE, messagesDisplayModel.getTimeStamp());
+        contentValues.put(MessageSDbSchema.ListofTable.Columns.ME, messagesDisplayModel.getMe());
 
         database.update(MessageSDbSchema.ListofTable.NAME, contentValues, MessageSDbSchema.ListofTable.Columns.ID + " = ?", new String[]{messagesDisplayModel.getID()});
         database.close();
     }
 
-    public List<chatSummeryDbDetails> getOverviewOfApis() {
-        List<chatSummeryDbDetails> apiOverviewDetailsList = new ArrayList<>();
+    public List<ChatSummeryDbDetails> getOverviewOfApis() {
+        List<ChatSummeryDbDetails> apiOverviewDetailsList = new ArrayList<>();
+        database=getReadableDatabase();
+        Log.i(TAG, "getOverviewOfApis: ");
         String mSelectComplexQuery = "SELECT " +MessageSDbSchema.ListofTable.Columns.IMAGE +","+MessageSDbSchema.ListofTable.Columns.NAME +","
 
                 + " COUNT(" +"distinct " + MessageSDbSchema.ListofTable.Columns.MESSAGES + ")"
                 + " FROM " + MessageSDbSchema.ListofTable.NAME  + " GROUP BY " + MessageSDbSchema.ListofTable.Columns.NAME;
-        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery(mSelectComplexQuery, null);
+
+        Cursor cursor = database.rawQuery(mSelectComplexQuery, null);
         try {
-            cursor.moveToFirst();
-            while (!cursor.isAfterLast()) {
-                chatSummeryDbDetails overviewDetails = new chatSummeryDbDetails();
-                overviewDetails.setImages(cursor.getString(0));
-                overviewDetails.setUserName(cursor.getString(1));
-                overviewDetails.setTotalMessages(cursor.getInt(2));
-                apiOverviewDetailsList.add(overviewDetails);
-                cursor.moveToNext();
+            if(cursor !=null) {
+                cursor.moveToFirst();
+                while (!cursor.isAfterLast()) {
+                    ChatSummeryDbDetails overviewDetails = new ChatSummeryDbDetails();
+                    overviewDetails.setImages(cursor.getString(0));
+                    overviewDetails.setUserName(cursor.getString(1));
+                    overviewDetails.setTotalMessages(cursor.getInt(2));
+                    apiOverviewDetailsList.add(overviewDetails);
+                    cursor.moveToNext();
+                }
+
             }
         } finally {
             cursor.close();
+            database.close();
         }
         return apiOverviewDetailsList;
     }
-    public List<chatSummeryDbDetails> getOverviewOfFav() {
-        List<chatSummeryDbDetails> apiOverviewDetailsList = new ArrayList<>();
-        String mSelectComplexQuery = "SELECT " +MessageSDbSchema.ListofTable.Columns.IMAGE +","+MessageSDbSchema.ListofTable.Columns.NAME +","
 
-                + " COUNT(" +"distinct " + MessageSDbSchema.ListofTable.Columns.MESSAGES + ")"
-                + " FROM " + MessageSDbSchema.ListofTable.NAME  + " GROUP BY " + MessageSDbSchema.ListofTable.Columns.NAME;
-        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery(mSelectComplexQuery, null);
+
+    public List<FavTotalModel> getTotalFavMessages() {
+
+        List<FavTotalModel> favTotalModelArrayList = new ArrayList<>();
+
+        database=getReadableDatabase();
+        Log.i(TAG, "getOverviewOfApis: ");
+
+
+        String mSelectComplexQuery = "SELECT " +MessageSDbSchema.ListofTable.Columns.NAME+","
+
+                + " COUNT (" +MessageSDbSchema.ListofTable.Columns.MESSAGES + ")"
+                + " FROM " + MessageSDbSchema.ListofTable.NAME  + " WHERE " + MessageSDbSchema.ListofTable.Columns.MYFAV+" = "+1 +" GROUP BY "+MessageSDbSchema.ListofTable.Columns.NAME;
+
+        Cursor cursor = database.rawQuery(mSelectComplexQuery, null);
         try {
-            cursor.moveToFirst();
-            while (!cursor.isAfterLast()) {
-                chatSummeryDbDetails overviewDetails = new chatSummeryDbDetails();
-                overviewDetails.setImages(cursor.getString(0));
-                overviewDetails.setUserName(cursor.getString(1));
-                overviewDetails.setTotalMessages(cursor.getInt(2));
-                apiOverviewDetailsList.add(overviewDetails);
-                cursor.moveToNext();
+            if(cursor !=null) {
+                cursor.moveToFirst();
+                while (!cursor.isAfterLast()) {
+                    FavTotalModel favTotalModel = new FavTotalModel();
+                    favTotalModel.setUserName(cursor.getString(0));
+                    favTotalModel.setFavTotal(cursor.getInt(1));
+                    favTotalModelArrayList.add(favTotalModel);
+                    cursor.moveToNext();
+                }
+
             }
         } finally {
             cursor.close();
+            database.close();
         }
-        return apiOverviewDetailsList;
+
+        return favTotalModelArrayList;
     }
 }

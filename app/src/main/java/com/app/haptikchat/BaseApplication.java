@@ -9,8 +9,6 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
-import java.util.HashMap;
-
 /**
  * Created by swapna on 4/3/17.
  */

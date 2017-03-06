@@ -10,12 +10,38 @@ public class MessagesDisplayModel {
     String messages;
     String image;
     String name;
+    String timeStamp;
+    int me;
+    int myFav;
+
+    public int getMyFav() {
+        return myFav;
+    }
+
+    public void setMyFav(int myFav) {
+        this.myFav = myFav;
+    }
+
+    public int getMe() {
+        return me;
+    }
+
+    public void setMe(int me) {
+        this.me = me;
+    }
+
+    public String getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setTimeStamp(String timeStamp) {
+        this.timeStamp = timeStamp;
+    }
 
 
     public MessagesDisplayModel() {
 
     }
-
 
     public String getID() {
         return ID;
@@ -58,25 +84,31 @@ public class MessagesDisplayModel {
     }
 
 
+    @Override
+    public String toString() {
+        return "MessagesDisplayModel{" +
+                "ID='" + ID + '\'' +
+                ", userName='" + userName + '\'' +
+                ", messages='" + messages + '\'' +
+                ", image='" + image + '\'' +
+                ", name='" + name + '\'' +
+                ", timeStamp='" + timeStamp + '\'' +
+                ", me=" + me +
+                ", myFav=" + myFav +
+                '}';
+    }
 
-
-    public MessagesDisplayModel(String userName, String messages, String image, String name) {
+    public MessagesDisplayModel(String userName, String messages, String image, String name, String timeStamp, int me, int numfav) {
         this.userName=userName;
         this.messages=messages;
         this.image=image;
         this.name=name;
-
+        this.timeStamp=timeStamp;
+        this.me=me;
+this.myFav=numfav;
     }
 
 
 
-    @Override
-    public String toString() {
-        return "Messages{" +
-                "userName='" + userName + '\'' +
-                ", messages=" + messages +
-                + '\'' +
-                ", name=" + name +
-                '}';
-    }
+
 }

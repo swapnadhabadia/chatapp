@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">HaptikChat</string>
     <string name="loading">get Data</string>
+    <string name="chat_my_name">My Name</string>
+    <string name="chat_message">Message</string>
+    <string name="time">Time</string>
+    <string name="name">Name</string>
+    <string name="test_name">Test Name</string>
+    <string name="total_msg">Total Message</string>
+    <string name="test_total">Total</string>
+    <string name="favourite">Favourite Msg</string>
+    <string name="user_name">User Name</string>
+
 </resources>

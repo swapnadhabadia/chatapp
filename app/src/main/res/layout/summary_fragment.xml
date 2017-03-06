@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/displayProfile"
+        android:layout_width="@dimen/dimen_35dp"
+        android:layout_height="@dimen/dimen_35dp"
+        android:layout_gravity="clip_horizontal"
+        android:background="@drawable/circle_shape" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/name"
+            style="@style/bodyTextStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:text="@string/name">
+
+        </android.support.v7.widget.AppCompatTextView>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtName"
+            style="@style/bodyTextStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:text="@string/test_name"
+
+            ></android.support.v7.widget.AppCompatTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/totalMessage"
+            style="@style/bodyTextStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:text="@string/total_msg"
+
+            >
+
+        </android.support.v7.widget.AppCompatTextView>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/totalMessagetxt"
+            style="@style/bodyTextStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:text="@string/test_total"
+
+            ></android.support.v7.widget.AppCompatTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/favourite"
+            style="@style/bodyTextStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:text="@string/favourite"
+
+            >
+
+        </android.support.v7.widget.AppCompatTextView>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/favTxt"
+            style="@style/bodyTextStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:text="@string/test_total"
+
+            ></android.support.v7.widget.AppCompatTextView>
+    </LinearLayout>
+</LinearLayout>

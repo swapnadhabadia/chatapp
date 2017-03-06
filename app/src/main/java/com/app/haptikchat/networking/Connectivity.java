@@ -18,11 +18,6 @@ public class Connectivity {
         return cm.getActiveNetworkInfo();
     }
 
-    /**
-     * Check if there is any connectivity
-     * @param context
-     * @return
-     */
     public static boolean isConnected(Context context){
         NetworkInfo info = Connectivity.getNetworkInfo(context);
         return (info != null && info.isConnected());
