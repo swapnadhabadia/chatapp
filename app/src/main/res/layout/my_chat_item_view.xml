@@ -72,22 +72,14 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="@dimen/dimen_35dp"
-        android:layout_height="@dimen/dimen_35dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/dimen_10dp"
-        android:layout_marginEnd="@dimen/dimen_15dp"
-        android:layout_marginRight="@dimen/dimen_15dp"
-        android:layout_marginTop="@dimen/dimen_5dp"
-        android:background="@drawable/circle_shape"
-        android:padding="@dimen/dimen_3dp"
-        app:layout_collapseMode="parallax">
+
 
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/addToFavouriteImg"
             android:layout_width="@dimen/dimen_35dp"
             android:layout_height="@dimen/dimen_35dp"
             app:srcCompat="@drawable/fav_empty" />
-    </RelativeLayout>
+
 </LinearLayout>
+
+

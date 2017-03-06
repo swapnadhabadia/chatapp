@@ -18,11 +18,11 @@ public class MessagesStore {
 
 
     public Context context;
-    private ArrayList<MessagesDisplayModel> MessagesDisplayModelArrayList=new ArrayList<>();
+     ArrayList<MessagesDisplayModel> MessagesDisplayModelArrayList=new ArrayList<>();
     MessageDatabaseHandler notificationDatabaseHandler;
     List<ChatSummeryDbDetails> MessagesDisplayModelArrayList1;
-    private List<FavTotalModel> mFavTotalModelList;
-    private String TAG="MessagesStore";
+     List<FavTotalModel> mFavTotalModelList;
+     String TAG="MessagesStore";
 
     public MessagesStore(Context context) {
         this.context=context;

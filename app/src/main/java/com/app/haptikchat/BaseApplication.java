@@ -21,7 +21,7 @@ public class BaseApplication extends Application {
 
     public static int GENERAL_TRACKER = 0;
 
-    static ImageLoader imageLoader;
+   private static ImageLoader imageLoader;
 
 
     @Override

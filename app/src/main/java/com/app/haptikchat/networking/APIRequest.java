@@ -34,7 +34,7 @@ public class APIRequest<T> extends JsonRequest<T> implements Constants.HeaderKey
     private Class<T> mClazz;
     private Map<String, String> mHeaders;
     private Response.Listener<T> mListener;
-    private Response.ErrorListener mErrorListener;
+     Response.ErrorListener mErrorListener;
     private Context mContext;
 
     private APIRequest(Builder builder) {

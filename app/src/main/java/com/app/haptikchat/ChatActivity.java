@@ -9,7 +9,7 @@ import com.app.haptikchat.chatdetail.summary.RefreshFragmentInterface;
 
 
 public class ChatActivity extends FragmentActivity {
-    private TabLayout tabLayout;
+     TabLayout tabLayout;
     private ViewPager viewPager;
     private ChatFragmentPagerAdapter adapter;
 

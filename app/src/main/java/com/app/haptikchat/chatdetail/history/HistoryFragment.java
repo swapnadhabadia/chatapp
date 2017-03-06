@@ -28,9 +28,9 @@ public class HistoryFragment extends Fragment implements HistoryFragmentInterfac
      RecyclerView mRecyclerView;
     RecyclerViewHistoryAdapter mRecyclerViewHistoryAdapter;
     PresenterChat presenterChat;
-    private LinearLayoutManager mLayoutManager;
+     LinearLayoutManager mLayoutManager;
     private String TAG="ChatHistoryFragment";
-    private MessagesStore messagesStore;
+     MessagesStore messagesStore;
 
     public static HistoryFragment newInstance(String tab_id) {
         HistoryFragment fragment = new HistoryFragment();

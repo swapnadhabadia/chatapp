@@ -28,7 +28,7 @@ import java.util.List;
 public class SummaryFragment extends Fragment  implements SummaryFragmentInterface,RefreshFragmentInterface {
 
     private RecyclerView mRecyclerView;
-    private LinearLayoutManager mLayoutManager;
+     LinearLayoutManager mLayoutManager;
     private String TAG = "SummeryFragment";
     private RecyclerViewMessagesAdapter mRecyclerViewMessagesAdapter;
      PresenterChat presenterChat;

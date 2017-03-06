@@ -17,7 +17,7 @@ public class VolleyUtil {
     private static final String TAG = "VolleyUtil";
     private static VolleyUtil sInstance;
     private RequestQueue mRequestQueue;
-    private ImageLoader mImageLoader;
+     ImageLoader mImageLoader;
 
     private VolleyUtil(final Context context) {
         mRequestQueue = Volley.newRequestQueue(context.getApplicationContext());
