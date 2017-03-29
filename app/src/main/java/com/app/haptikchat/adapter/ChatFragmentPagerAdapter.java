@@ -11,6 +11,7 @@ import com.app.haptikchat.chatdetail.summary.SummaryFragment;
  * Created by swapna on 4/3/17.
  */
 public class ChatFragmentPagerAdapter extends FragmentPagerAdapter {
+    //swapna
     final int PAGE_COUNT = 2;
     private String tabTitles[] = new String[] { "Chat History", "Chat Detail" };
      Context context;
